@@ -35,8 +35,8 @@
 .bg-secondary
 	background-color: $brand-secondary
 	
-.fitness-first,
-.love-your-body
+.reservation,
+.features-inbox
 	position: relative
 	height: 395px
 	
@@ -69,7 +69,7 @@
 		position: relative
 		height: 100%
 		background:
-			image: url("../img/restaurant.jpg")			
+			image: url("../img/reservation.jpg")			
 			size: cover
 			repeat: no-repeat
 			
@@ -87,7 +87,7 @@
 				margin-right: 10px
 				color: $brand-primary
 				font-size: 12px
-				font-weight: 700
+				font-weight: 700				
 				
 				span
 					color: #fff
@@ -119,17 +119,17 @@
 			height: 50%
 			
 @include media-breakpoint-down(md)
-	.fitness-first
+	.reservation
 		display: flex
 		flex-direction: column
 		
 		.text-block
 			order: 1	
 	
-.love-your-body
+.features-inbox
 				
 	.large-thumb
-		background-image: url("../img/celular-cafeteria.jpg")
+		background-image: url("../img/inbox.jpg")
 			
 		.stats
 			left: 45px
@@ -194,7 +194,7 @@
 			position: relative
 			height: 330px
 			background:
-				image: url("../img/beach.jpg")
+				image: url("../img/wallet.jpg")
 				position: 50% 75%
 				size: cover
 				repeat: no-repeat				
@@ -235,13 +235,13 @@
 	position: relative
 	height: 650px
 	
-	.get-involved
+	.community
 		@include vertical-lockup
 		
 		.large-thumb
 			height: 330px
 			background:
-				image: url("../img/news.jpg")
+				image: url("../img/community.jpg")
 				position: center
 				size: cover
 				repeat: no-repeat
@@ -267,32 +267,30 @@
 					
 				p
 					@include grid-text
-					
-				img
-					position: absolute
-					top: 0
-					right: 0
-					width: 26px
-					
+
+				.btn-light				
+					border: 1px solid
+
 				@include media-breakpoint-down(lg)
 					padding: 0 15px
 					
 					img
 						right: 15px
 					
-.eating-habits
+.support
 	@include vertical-lockup
 	
 	.small-thumb
 		height: 330px
 		background:
-			image: url("../img/eating-habits.jpg")
+			image: url("../img/support.jpg")
 			position: center
 			size: cover
 			repeat: no-repeat
 	
 	.text-block
 		@include grid-text-block($color: $brand-secondary, $height: 320px)
+		padding-bottom: 20px
 		
 		.text-lockup
 			position: relative
@@ -308,13 +306,7 @@
 				
 			p
 				@include grid-text($color: #fff)
-				
-			img
-				position: absolute
-				top: 0
-				right: 0
-				width: 24px
-				
+						
 			@include media-breakpoint-down(lg)
 				padding: 0 15px
 				
