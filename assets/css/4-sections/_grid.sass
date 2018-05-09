@@ -69,8 +69,7 @@
 		position: relative
 		height: 100%
 		background:
-			image: url("../img/yoga.jpg")
-			position: center
+			image: url("../img/restaurant.jpg")			
 			size: cover
 			repeat: no-repeat
 			
@@ -130,7 +129,7 @@
 .love-your-body
 				
 	.large-thumb
-		background-image: url("../img/apple-watch.jpg")
+		background-image: url("../img/celular-cafeteria.jpg")
 			
 		.stats
 			left: 45px
@@ -138,7 +137,7 @@
 			@include media-breakpoint-down(sm)
 				left: 20px
 
-.mid-unit
+.feature-news
 	position: relative
 	height: 650px
 	
@@ -148,7 +147,7 @@
 		.small-thumb
 			height: 330px
 			background:
-				image: url("../img/jogging.jpg")
+				image: url("../img/news.jpg")
 				position: center
 				size: cover
 				repeat: no-repeat
@@ -188,7 +187,7 @@
 				@include media-breakpoint-down(md)
 					max-width: 650px
 										
-	.summer-fun
+	.featured-wallet
 		@include vertical-lockup
 		
 		.large-thumb
@@ -198,43 +197,8 @@
 				image: url("../img/beach.jpg")
 				position: 50% 75%
 				size: cover
-				repeat: no-repeat
-				
-			.date
-				position: absolute
-				top: 60px
-				left: 60px
-				font-weight: 700
-				text-transform: uppercase
-				letter-spacing: .8px
-				
-			.category
-				position: absolute
-				top: 56px
-				right: 60px
-				
-				p
-					display: inline-block
-					margin-right: 5px
-					font-weight: 700
-					text-transform: uppercase
-					letter-spacing: .8px
-					
-				i
-					position: relative
-					top: 3px
-					display: inline-block
-					font-size: 20px
-			
-			@include media-breakpoint-down(sm)
-				.date
-					top: 30px
-					left: 15px
-					
-				.category
-					top: 26px
-					right: 15px
-					
+				repeat: no-repeat				
+								
 		.text-block
 			height: 320px
 			background-color: $brand-secondary
@@ -246,6 +210,13 @@
 				top: 40px
 				max-width: 650px
 				margin: 0 auto
+
+				h3
+					font-size: 14px
+					text-transform: uppercase
+					margin-top: 13px
+					margin-bottom: -5px
+					letter-spacing: 1px
 					
 				h2
 					@include grid-heading-lg($color: #fff, $font-size: 40px)
@@ -270,7 +241,7 @@
 		.large-thumb
 			height: 330px
 			background:
-				image: url("../img/self-involved.jpg")
+				image: url("../img/news.jpg")
 				position: center
 				size: cover
 				repeat: no-repeat
