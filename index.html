@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
-<body class="mobile-shift">
-
+<body class="mobile-shift" id="main">
+	
 <header>
 
 	<div class="fixed-navbar">
@@ -28,11 +28,11 @@
 
 			<ul class="nav">
 
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Veneficios</a></li>				
-				<li><a href="#">Preguntas Frecuentes</a></li>
+				<li><a href="#main">Inicio</a></li>
+				<li><a href="#featured">Beneficios</a></li>				
+				<!--<li><a href="#">Preguntas Frecuentes</a></li>-->
 				<li><a href="venue.html">Comercios</a></li>
-				<li><a href="#">Blog</a></li>
+				<!--<li><a href="#">Blog</a></li>-->
 				<li><a href="#">Contacto</a></li>
 
 			</ul>
@@ -48,12 +48,12 @@
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<h1>
-						<div class="headline">La herramienta más confiable para el promotor turístico</div>
-						<div class="kicker">Recomienda, reserva, vende y GANA DINERO<span>/</span></div>
+						<div class="headline">RECOMIENDA, RESERVA, VENDE Y GANA DINERO</div>
+						<div class="kicker">Community Booking System<span></span></div>
 					</h1>
 					<br>
-					<a href="#"><div class="btn btn-light"><img src="assets/img/appleicon.png" alt="icono de apple"> APP STORE</div></a> 
-					<a href="https://play.google.com/store/apps/details?id=com.mic_mobile"><div class="btn btn-light"><img src="assets/img/playicon.png" alt="icono de apple"> GOOGLE PLAY</div></a>
+					<a href="#"><div class="btn btn-strong"><i class="fab fa-apple"></i>&nbsp;&nbsp; APP STORE</div></a> 
+					<a href="https://play.google.com/store/apps/details?id=com.mic_mobile"><div class="btn btn-strong"><img src="assets/img/playicon.png" alt="icono de apple">&nbsp;&nbsp; GOOGLE PLAY</div></a>
 				</div>
 				<div class="col-md-8 text-center video-promo">
 					<a href="#" >
@@ -68,18 +68,17 @@
 
 	</div>
 
-	<div class="angled-overlay"></div>
-
 	<div class="slide-out-nav">
 
 		<ul class="mobile-nav">
 
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Veneficios</a></li>				
-				<li><a href="#">Preguntas Frecuentes</a></li>
+				<li><a href="#main">Inicio</a></li>
+				<li><a href="#featured">Beneficios</a></li>				
+				<!--<li><a href="#">Preguntas Frecuentes</a></li>-->
 				<li><a href="venue.html">Comercios</a></li>
-				<li><a href="#">Blog</a></li>
+				<!--<li><a href="#">Blog</a></li>-->
 				<li><a href="#">Contacto</a></li>
+
 
 		</ul>
 
@@ -97,7 +96,19 @@
 
 </header>
 
-<section class="featured">
+<section class="section-cta">
+	<div class="container">
+		<div class="row">
+			<div class="col-md text-center">
+				<h5>SI ERES CONCIERGE, MAYORDOMO, RECEPCIONISTA, GERENTE, TOUR OPERADOR, OPC, RP, AGENTE INMOBILIARIO O RECIBES TURISTAS DE MANERA REGULAR ESTA ES TU HERRAMIENTA PARA CONOCER LA OFERTA DE LOS COMERCIOS TURÍSTICOS Y GANAR POR TUS RECOMENDACIONES, ¡INSTALALA YA!</h5>
+				<a href="#"><div class="btn btn-strong"><img src="assets/img/appleicon.png" alt="icono de apple">&nbsp;&nbsp; APP STORE</div></a> 
+				<a href="https://play.google.com/store/apps/details?id=com.mic_mobile"><div class="btn btn-strong"><img src="assets/img/playicon.png" alt="icono de apple">&nbsp;&nbsp; GOOGLE PLAY</div></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="featured" id="featured">
 
 	<div class="container">
 
@@ -117,7 +128,7 @@
 
 			<div class="col-lg-5 feature">
 					<i class="far fa-calendar-alt fa-3x"></i>
-					<h2>Lleva el control de todo</h2>
+					<h2>Registro de tus actividades</h2>
 					<!--<p>Somos una comunidad y te apoyamos. Si tienes dudas o necesitas apoyo, chatea con los comercios, otros promotores y con nosotros.</p>-->
 				</div>
 
@@ -129,7 +140,7 @@
 
 			<div class="col-lg-5 feature">				
 				<i class="far fa-credit-card fa-3x"></i>
-				<h2>Cobro fácil de Comisiones</h2>
+				<h2>Comisiones seguras</h2>
 				<!--<p>Ya no tendrás que ir de comercio en comercio. Tampoco esperar que día pueden pagarte la comisión. Nosotros te lo depositamos cada semana sin excepción</p>-->
 			</div>
 
@@ -141,14 +152,14 @@
 
 			<div class="col-lg-5 feature">
 				<i class="fas fa-users fa-3x"></i>
-				<h2>Pertenece a una comunidad</h2>
+				<h2>Comunidad</h2>
 				<!--<p>Somos una comunidad y te apoyamos. Si tienes dudas o necesitas apoyo, chatea con los comercios, otros promotores y con nosotros.</p>-->
 			</div>
 
 
 			<div class="col-lg-5 feature">
 					<i class="far fa-heart fa-3x"></i>
-					<h2>100% GRATUITO</h2>
+					<h2>100% Gratuito</h2>
 					<!--<p>Olvídate de tener que ir de comercio en comercio a pedir información y permiso, nosotros ya lo hicimos por ti. Si crees que nos falta alguno solo comunícanos y nosotros hablamos con ellos.</p>-->
 			</div>
 
@@ -177,7 +188,9 @@
 
 						<img src="assets/img/drop-muted.png">
 
-						<p>Solo elije el lugar, llena la información de tu cliente y listo, el comercio se encargará de darle seguimiento. Además, con tu aplicación tendrás toda la información necesaria para que vendas. Desde el horario, ubicación y fotos hasta que tipo de ambiente y tarjetas aceptan.</p>
+						<p>¡Solo elije el lugar, llena la información de tu cliente y listo! El comercio se encargará de darle seguimiento.
+							Con Mi Concierge tendrás toda la información necesaria para que vendas, horario, ubicación y fotos hasta
+							que tipo de ambiente.</p>
 
 					</div>
 
@@ -206,7 +219,8 @@
 
 						<img src="assets/img/drop-muted.png">
 
-						<p>¿Sabes cuantas recomendaciones haces a la semana? Desde donde estes podrás conocer si tus clientes han asistido, podrás ver tus comisiones generadas y administrarte de mejor forma como nunca lo haz hecho</p>
+						<p>¿Sabes cuantas recomendaciones haces a la semana? Desde donde estés podrás conocer si tus clientes han
+							asistido y ver tus comisiones.</p>
 
 					</div>
 
@@ -234,7 +248,8 @@
 
 						<h2>Noticias </h2>
 
-						<p>Para ser el mejor promotor debes estar siempre informado. Te haremos llegar los nuevos eventos, ofertas, lugares por descubrir y hasta consejos para vender más en nuestra sección de noticias.</p>
+						<p>Para ser el mejor promotor debes estar siempre informado. Te haremos llegar los nuevos eventos, ofertas,
+							lugares por descubrir y hasta consejos para vender más en nuestra sección de noticias.</p>
 
 						<i class="icon-user"></i>
 
@@ -257,7 +272,8 @@
 						<h3>El control de tus finanzas con un clic</h3>
 						<h2>Cartera Digital</h2>
 
-						<p>Ya no volverás a ir a cobrar de lugar en lugar ni escuchar excusas para no poder cobrar. Cada semana te depositamos el dinero que hasya generado. Luego transfiérelo a la cuenta que tu elijas. Nosotros nos encargamos del trabajo dificil. </p>
+						<p>Ya no tendrás que a ir a cobrar tus comisiones. Cada semana te depositamos el dinero que hayas generado,
+							luego transfiérelo a la cuenta que tu elijas. </p>
 
 					</div>
 
@@ -281,9 +297,9 @@
 
 						<h2>Comunidad</h2>
 
-						<p>Al unirte, no solo tendrás la mejor herramienta en el mercado para promotores, ahora pertecenerás a una de las comunidades más importantes del sector turístico. Habla con ellos, recibe apoyo cuando lo necesites, descuentos exclusivos y más beneficios. <br>Descargalo ya:</p>						
-						<a href="#"><div class="btn btn-light"><img src="assets/img/appleicon.png" alt="icono de apple"> APP STORE</div></a>
-					<a href="https://play.google.com/store/apps/details?id=com.mic_mobile"><div class="btn btn-light"><img src="assets/img/playicon.png" alt="icono de apple"> GOOGLE PLAY</div></a>
+						<p>Al unirte, no solo tendrás la mejor herramienta en el mercado para promotores, ahora pertenecerás a una de
+							las comunidades más importantes del sector turístico. Habla con ellos, recibe apoyo cuando lo necesites,
+							descuentos exclusivos y muchos beneficios.<br>Descargalo ya:</p>												
 					</div>
 
 				</div>
@@ -302,7 +318,7 @@
 
 						<h2>MiConcierge te respalda</h2>
 
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+						<p>No solo te ofrecemos la mejor herramienta y comunidad, constantemente ofrecemos cursos de capacitación, mejores empleos y mejores herramientas para ayudarte a ganar más dinero.</p>
 						
 					</div>
 
@@ -318,6 +334,18 @@
 
 <!--*******/Section GRID********-->
 
+<section class="section-cta">
+	<div class="container">
+		<div class="row">
+			<div class="col-md text-center">
+				<h3>Comienza a ganar dinero recomendando lugares con MiConcierge</h3>
+				<a href="#"><div class="btn btn-strong"><img src="assets/img/appleicon.png" alt="icono de apple">&nbsp;&nbsp; APP STORE</div></a> 
+				<a href="https://play.google.com/store/apps/details?id=com.mic_mobile"><div class="btn btn-strong"><img src="assets/img/playicon.png" alt="icono de apple">&nbsp;&nbsp; GOOGLE PLAY</div></a>
+
+			</div>
+		</div>
+	</div>
+</section>
 
 
 <footer>
@@ -347,7 +375,9 @@
 
 				<h3>Sobre nosotros</h3>
 
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fuga, beatae tempore odio est labore quasi corporis velit nam numquam quod facilis? Minus suscipit ipsum, soluta rerum itaque rem omnis?.</p>
+				<p>Somos un sistema que gestiona a la comunidad de promotores turísticos y brindamos las herramientas
+					necesarias para influenciar de manera positiva a los turistas de un destino determinado a través de la
+					información.</p>
 
 			</div>
 
@@ -357,6 +387,7 @@
 
 				<p>Teléfono: <a href="tel:+52 1 984 106 9387">+52 1 984 106 9387</a></p>
 				<p>Correo: <a href="mailto:contacto@miconcierge.net">contacto@miconcierge.net</a></p>
+				
 
 			</div>
 
@@ -374,7 +405,10 @@
 					
 
 				</div>
-
+				<br>
+					
+				<h3 class="text-center"><a href="./terminosycondiciones.html">Da click aquí para leer nuestros <strong class="text-uppercase">términos y condiciones</strong></a></h3>
+				
 			</div>
 
 		</div>
