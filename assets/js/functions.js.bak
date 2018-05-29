@@ -57,14 +57,3 @@ function angleCalc() {
 		
 }
 
-function handleModal(){
-
-	
-if ($( "#appStoreModal" ).hasClass( "opened" )) {
-	$( "#appStoreModal" ).removeClass( "opened" )
-} else {
-	$( "#appStoreModal" ).addClass( "opened" )
-}
-
-	
-}

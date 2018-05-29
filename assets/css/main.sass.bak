@@ -15,6 +15,3 @@
 
 // 4 - Sections
 @import '4-sections/-sections-dir'
-
-// 4 - Modals
-@import '5-modals/-modals-dir'

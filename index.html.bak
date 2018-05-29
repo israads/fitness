@@ -8,9 +8,9 @@
   <meta name="description" content="Plataforma de ventas y reservaciones para comercios turísticos.">
   <meta name="keywords" content="Comercio turistico, promotores, reservaciones, turismo">
   <meta name="author" content="Israel Domínguez">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/main.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body class="mobile-shift" id="main">
 	
@@ -52,7 +52,7 @@
 						<div class="kicker">Community Booking System<span></span></div>
 					</h1>
 					<br>
-					<a href="#" onclick="handleModal(); return false;"><div class="btn btn-strong"><i class="fab fa-apple"></i>&nbsp;&nbsp; APP STORE</div></a> 
+					<a href="#"><div class="btn btn-strong"><i class="fab fa-apple"></i>&nbsp;&nbsp; APP STORE</div></a> 
 					<a href="https://play.google.com/store/apps/details?id=com.mic_mobile"><div class="btn btn-strong"><img src="assets/img/playicon.png" alt="icono de apple">&nbsp;&nbsp; GOOGLE PLAY</div></a>
 				</div>
 				<div class="col-md-8 text-center video-promo">
@@ -101,7 +101,7 @@
 		<div class="row">
 			<div class="col-md text-center">
 				<h5>SI ERES CONCIERGE, MAYORDOMO, RECEPCIONISTA, GERENTE, TOUR OPERADOR, OPC, RP, AGENTE INMOBILIARIO O RECIBES TURISTAS DE MANERA REGULAR ESTA ES TU HERRAMIENTA PARA CONOCER LA OFERTA DE LOS COMERCIOS TURÍSTICOS Y GANAR POR TUS RECOMENDACIONES, ¡INSTALALA YA!</h5>
-				<a href="#" onclick="handleModal(); return false;"><div class="btn btn-strong"><img src="assets/img/appleicon.png" alt="icono de apple">&nbsp;&nbsp; APP STORE</div></a> 
+				<a href="#"><div class="btn btn-strong"><img src="assets/img/appleicon.png" alt="icono de apple">&nbsp;&nbsp; APP STORE</div></a> 
 				<a href="https://play.google.com/store/apps/details?id=com.mic_mobile"><div class="btn btn-strong"><img src="assets/img/playicon.png" alt="icono de apple">&nbsp;&nbsp; GOOGLE PLAY</div></a>
 			</div>
 		</div>
@@ -339,12 +339,12 @@
 		<div class="row">
 			<div class="col-md text-center">
 				<h3>Comienza a ganar dinero recomendando lugares con MiConcierge</h3>
-				<a href="#" onclick="handleModal(); return false;"><div class="btn btn-strong"><img src="assets/img/appleicon.png" alt="icono de apple">&nbsp;&nbsp; APP STORE</div></a> 
+				<a href="#"><div class="btn btn-strong"><img src="assets/img/appleicon.png" alt="icono de apple">&nbsp;&nbsp; APP STORE</div></a> 
 				<a href="https://play.google.com/store/apps/details?id=com.mic_mobile"><div class="btn btn-strong"><img src="assets/img/playicon.png" alt="icono de apple">&nbsp;&nbsp; GOOGLE PLAY</div></a>
+
 			</div>
 		</div>
 	</div>
-
 </section>
 
 
@@ -435,21 +435,9 @@
 
 </footer>
 
-<div id="appStoreModal" class="fadeIn" onclick="handleModal(); ">
-	<form  onclick="handleModal();">
-
-		<input type="text" placeholder="Tu Nombre">
-
-		<input type="email" placeholder="Tu Correo" spellcheck="false">
-
-		<button onclick="handleModal();" class="newsletter-btn" type="submit" value="send Message">Enviar<i class="fas fa-chevron-circle-right"></i></button>
-
-	</form>
-</div>
-
 	
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-<script src="assets/js/functions-dist.js"></script>
+<script src="assets/js/functions.min.js"></script>
 </body>
 </html>
