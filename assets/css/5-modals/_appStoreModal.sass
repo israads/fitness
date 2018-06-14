@@ -1,61 +1,35 @@
-#appStoreModal
-	display: none;
+.modal
+	display: none
 	top: 0
 	position: fixed
-	height: 100%
-	width: 100%
-	background: rgba(0,0,0,.35)
+	height: 100vh
+	width: 100vw
+	background: rgba(0,0,0,.55)
 	justify-content: center
 	align-items: center
+	box-shadow: 0 4px 8px rgba(0,0,0,.32),0 8px 40px rgba(0,0,0,.4)
+	color: #34495e
+	.modal-dialog
+		width: 500px
+	
+	
 	&.fadeIn 
 		animation: opac 0.8s
 	&.opened
 		display: flex
 
-	form
-		display: flex
-		flex-direction: column
-		
-		input
-			height: 50px
-			margin-right: 5px
-			padding-left: 20px
-			border: none
-			border-radius: 3px
-			color: #8297a7
-			margin: 5px
-			
-			&:focus
-				outline: none
-			
-			&::placeholder
-				color: #8297a7
-				
-		input[type="email"]
-			flex-grow: 1
-				
-		.newsletter-btn
-			margin-right: 0
-			padding: 0 30px
-			color: #fff
-			font-size: 15px
-			line-height: 50px
-			background-color: $brand-secondary
-			border: none
-			border-radius: 3px
-			transition: background-color .2s ease-in-out
-			
-			i
-				position: relative
-				top: 2px
-				left: 7px
-				display: inline-block
-							
-			&:hover
-				background-color: lighten($brand-secondary, 5%)
+	.btn-strong
+		width: 100%
+		margin: 0
+		margin-top: 20px
 
+#videoModal	
+	.modal-body
+		padding: 0
+	.modal-dialog
+		width: 600px
+		max-width: 600px
 
-	
 @keyframes opac
 	from
 		opacity: 0

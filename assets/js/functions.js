@@ -60,11 +60,25 @@ function angleCalc() {
 function handleModal(){
 
 	
-if ($( "#appStoreModal" ).hasClass( "opened" )) {
-	$( "#appStoreModal" ).removeClass( "opened" )
-} else {
-	$( "#appStoreModal" ).addClass( "opened" )
-}
+	if ($( "#appStoreModal" ).hasClass( "opened" )) {
+		$( "#appStoreModal" ).removeClass( "opened" )
+	} else {
+		$( "#appStoreModal" ).addClass( "opened" )
+	}
+	
+		
+	}
+
+	function videoModal(){
 
 	
-}
+		if ($( "#videoModal" ).hasClass( "opened" )) {
+			$( "#videoModal" ).removeClass( "opened" )
+		} else {
+			$( "#videoModal" ).addClass( "opened" )
+		}
+		
+			
+		}
+	
+

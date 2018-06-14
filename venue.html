@@ -53,8 +53,8 @@
 						<div class="kicker">Community Booking System</div>
 					</h1>
 					<br>
-					<a href="#"><div class="btn btn-strong">Quiero más información</div></a> 
-					<a href="#"><div class="btn btn-light">Ver vídeo</div></a> 
+					<a href="#" onclick="handleModal(); return false;"><div class="btn btn-strong">Quiero más información</div></a> 
+					<a href="#" onclick="videoModal(); return false;"><div class="btn btn-light">Ver vídeo</div></a> 
 					
 				</div>
 				
@@ -62,9 +62,7 @@
 		
 		</div>
 
-	</div>
-
-	<div class="angled-overlay"></div>
+	</div>	
 
 	<div class="slide-out-nav">
 
@@ -236,7 +234,7 @@
 						<hr>					
 					</div>
 					<div class="button-price">
-						<button class="btn btn-info">Quiero vender más</button>
+						<a class="btn btn-info" onclick="handleModal(); return false;" href="#">Quiero vender más</a>
 					</div>
 				</div>
 			</div>
@@ -268,7 +266,7 @@
 							<hr>					
 						</div>
 						<div class="button-price">
-							<button class="btn btn-info">Quiero vender más</button>
+							<a class="btn btn-info" onclick="handleModal(); return false;" href="#">Quiero vender más</a>
 						</div>
 					</div>
 				</div>
@@ -310,7 +308,7 @@
 								<hr>					
 							</div>
 							<div class="button-price">
-								<button class="btn btn-info">Quiero vender más</button>
+								<a class="btn btn-info" onclick="handleModal(); return false;" href="#">Quiero vender más</a>
 							</div>
 						</div>
 					</div>
@@ -333,7 +331,7 @@
 				<div class="row">
 					<div class="col-md-20">
 						<h2>Crea una cuenta gratuita y haz que tu negocio venda más</h2>
-						<a href="#" class="btn btn-light">Quiero que me contacten</a>
+						<a class="btn btn-info" onclick="handleModal(); return false;" href="#">Quiero que me contacten</a>
 					</div>
 				</div>
 			</div>
@@ -412,6 +410,72 @@
 
 </footer>
 
+<!--Modals-->
+
+<div id="appStoreModal" class="fadeIn modal" onclick="handleModal();" >	
+		
+	<div class="modal-dialog" role="document" onclick="handleModal();">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Déjanos tus datos y uno de nuestro equipo te contactará</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="handleModal();">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+					<form action="./mail.php"  method="post" role="form">
+						<div class="form-group">
+							<input type="text" class="form-control" name="bussiness" placeholder="Nombre de la empresa">							
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="name" placeholder="Nombre del representante">							
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="lastName" placeholder="Apellnameo">							
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" name="email" placeholder="Correo">
+						</div>
+						<div class="form-group">
+							<input type="input" class="form-control" name="phone" placeholder="Celular">
+						</div>
+						<div class="form-group">
+							<input type="input" class="form-control" name="website" placeholder="Sitio Web">
+						</div>
+						<div class="form-group">
+							<input type="input" class="form-control" name="city" placeholder="Ciudad">
+						</div>
+						<div class="checkbox">
+						  <label><input type="checkbox" checked> Acepto los <a href="./terminosycondiciones.html"> Términos y Condiciones</a></label>
+						</div>
+						<button type="submit" class="btn btn-strong"><i class="fab fa-apple"></i>&nbsp;&nbsp; Quiero que me contacten </button>
+					</form> 
+					  
+			  </div>
+			
+			</div>
+		  </div>
+
+</div>
+
+
+<div id="videoModal" class="fadeIn modal" onclick="videoModal(); ">	
+	
+	<div class="modal-dialog" role="document" onclick="videoModal(); ">
+			<div class="modal-content">
+			  
+			  <div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="videoModal(); ">
+							<span aria-hidden="true">&times;</span>
+						  </button>		
+						  <iframe width="600" height="450" src="https://www.youtube.com/embed/IpJa6nTWNa4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			  </div>
+			
+			</div>
+		  </div>
+
+</div>
+<!--/modals-->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>

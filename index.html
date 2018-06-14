@@ -56,7 +56,7 @@
 					<a href="https://play.google.com/store/apps/details?id=com.mic_mobile"><div class="btn btn-strong"><img src="assets/img/playicon.png" alt="icono de apple">&nbsp;&nbsp; GOOGLE PLAY</div></a>
 				</div>
 				<div class="col-md-8 text-center video-promo">
-					<a href="#" >
+					<a href="#" onclick="videoModal(); return false;" >
 						<img src="assets/img/button-play.png" alt="button play" class="button-play mx-auto d-block">
 						Ver vídeo
 					</a>
@@ -435,17 +435,55 @@
 
 </footer>
 
-<div id="appStoreModal" class="fadeIn" onclick="handleModal(); ">
-	<form  onclick="handleModal();">
+<div id="appStoreModal" class="fadeIn modal" onclick="handleModal();" >	
+		
+		<div class="modal-dialog" role="document" onclick="handleModal();">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Pronto estará disponible la versión para iOS <br> Regístrate y se de los primeros en poder usarla</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="handleModal();">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body">
+						<form action="./mail.php" method="post">
+							<div class="form-group">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Nombre completo">							
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="email" name="email" placeholder="Correo">
+							</div>
+							<div class="checkbox">
+							  <label><input type="checkbox" checked> Acepto los <a href="./terminosycondiciones.html"> Términos y Condiciones</a></label>
+							</div>
+							<button type="submit" class="btn btn-strong"><i class="fab fa-apple"></i>&nbsp;&nbsp; Quiero ser de los primeros </button>
+						</form> 
+						  
+				  </div>
+				
+				</div>
+			  </div>
 
-		<input type="text" placeholder="Tu Nombre">
-
-		<input type="email" placeholder="Tu Correo" spellcheck="false">
-
-		<button onclick="handleModal();" class="newsletter-btn" type="submit" value="send Message">Enviar<i class="fas fa-chevron-circle-right"></i></button>
-
-	</form>
 </div>
+
+
+<div id="videoModal" class="fadeIn modal" onclick="videoModal(); ">	
+		
+		<div class="modal-dialog" role="document" onclick="videoModal(); ">
+				<div class="modal-content">
+				  
+				  <div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="videoModal(); ">
+								<span aria-hidden="true">&times;</span>
+							  </button>		
+							  <iframe width="600" height="450" src="https://www.youtube.com/embed/FMR5STC4STA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>				  
+				  </div>
+				
+				</div>
+			  </div>
+
+</div>
+
 
 	
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
