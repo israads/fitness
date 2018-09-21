@@ -15,6 +15,16 @@
 <body class="mobile-shift" id="venue">
 
 <header>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124650615-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124650615-1');
+</script>
+
 
 	<div class="fixed-navbar">
 
@@ -34,7 +44,7 @@
 				<li><a href="#price">Precios</a></li>
 				<li><a href="./index.html">Promotores</a></li>
 				<!--<li><a href="#">Blog</a></li>-->
-				<li><a href="#">Contacto</a></li>
+				<li><a href="#" onclick="contact(); return false;">Contacto</a></li>
 
 			</ul>
 
@@ -218,7 +228,7 @@
 <section id="price">
 	<div class="container">
 		<div class="row text-center">
-			<div class="col-md-6 offset-md-1">
+			<div class="col-md-8 offset-md-2">
 				<div class="container-price">
 					<div class="title-price">
 						<div class="price-month">
@@ -227,7 +237,7 @@
 						</div>
 						
 					</div>					
-					
+
 					<div class="benefits">
 						<p>Perfil del Venue básico</p>
 						
@@ -241,38 +251,8 @@
 			<!--/price-->
 
 
-			<div class="col-md-6 ">
-					<div class="container-price">
-						<div class="title-price">
-							<div class="price-month">
-								<h2><strong>$159</strong><span>usd / month</span></h2>
-								<p>Básico</p>
-							</div>
-							
-						</div>					
-						
-						<div class="benefits">
-							<p>Perfil Venue Completo</p>
-							<p>Mapa</p>
-							<p>Promociones</p>
-							<p>Menús/productos</p>
-							<p>Una categoria</p>
-							<p>Recomendaciones</p>
-							<p>Reservaciones</p>
-							<p>Venta de productos</p>
-							<p>Chat con promotores</p>
-							<p>Push notifications (1 al mes) </p>
-							<p>eMail confirmación cliente </p>
-							<hr>					
-						</div>
-						<div class="button-price">
-							<a class="btn btn-info" onclick="handleModal(); return false;" href="#">Quiero vender más</a>
-						</div>
-					</div>
-				</div>
-				<!--/price-->
-
-				<div class="col-md-6 ">
+		
+				<div class="col-md-8">
 						<div class="container-price">
 							<div class="title-price">
 								<div class="price-month">
@@ -323,24 +303,6 @@
 
 
 <footer>
-
-	<div class="closer">
-
-		<div class="closing-claim text-center">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-20">
-						<h2>Crea una cuenta gratuita y haz que tu negocio venda más</h2>
-						<a class="btn btn-info" onclick="handleModal(); return false;" href="#">Quiero que me contacten</a>
-					</div>
-				</div>
-			</div>
-		
-		</div>
-
-	</div>
-
-
 	<div class="bg-angled-left"></div>
 
 	<div class="bg-angled-right"></div>
@@ -355,7 +317,9 @@
 
 				<h3>Sobre nosotros</h3>
 
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fuga, beatae tempore odio est labore quasi corporis velit nam numquam quod facilis? Minus suscipit ipsum, soluta rerum itaque rem omnis?.</p>
+				<p>Somos un sistema que gestiona a la comunidad de promotores turísticos y brindamos las herramientas
+					necesarias para influenciar de manera positiva a los turistas de un destino determinado a través de la
+					información. <a href="about.html">Leer más</a> </p>
 
 			</div>
 
@@ -365,6 +329,7 @@
 
 				<p>Teléfono: <a href="tel:+52 1 984 106 9387">+52 1 984 106 9387</a></p>
 				<p>Correo: <a href="mailto:contacto@miconcierge.net">contacto@miconcierge.net</a></p>
+				
 
 			</div>
 
@@ -374,16 +339,17 @@
 
 				<div class="social-icons">
 
-					<a href=""><i class="icon-facebook fab fa-facebook-f"></i></a>
-					<a href=""><i class="icon-twitter fab fa-twitter"></i></a>
-					<a href=""><i class="icon-youtube-play fab fa-youtube"></i></a>
+					<a href="https://www.facebook.com/MiConciergeNet/"><i class="icon-facebook fab fa-facebook-f"></i></a>				
+					<a href="https://www.youtube.com/channel/UCDEzKvKwQqQoMIb7n--PVUQ"><i class="icon-youtube-play fab fa-youtube"></i></a>
 					<!-- <a href=""><i class="icon-linkedin"></i></a> -->
+
+					
 
 				</div>
 				<br>
-
+					
 				<h3 class="text-center"><a href="./terminosycondiciones.html">Da click aquí para leer nuestros <strong class="text-uppercase">términos y condiciones</strong></a></h3>
-
+				
 			</div>
 
 		</div>
@@ -410,51 +376,38 @@
 
 </footer>
 
-<!--Modals-->
-
-<div id="appStoreModal" class="fadeIn modal" onclick="handleModal();" >	
+<!--MODAL-->
+<div id="contact" class="fadeIn modal" onclick="contact();" >	
 		
-	<div class="modal-dialog" role="document" onclick="handleModal();">
-			<div class="modal-content">
-			  <div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Déjanos tus datos y uno de nuestro equipo te contactará</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="handleModal();">
-				  <span aria-hidden="true">&times;</span>
-				</button>
+		<div class="modal-dialog" role="document" onclick="contact();">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Queremos escucharte. Escríbenos y pronto nos pondremos en contacto contigo</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="contact();">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body">
+						<form action="./mailContact.php" method="post">
+							<div class="form-group">
+								<input type="text" required class="form-control" id="name" name="name" placeholder="Nombre completo">							
+							</div>
+							<div class="form-group">
+								<input type="email" required class="form-control" id="email" name="email" placeholder="Correo">
+							</div>
+							<div class="form-group">
+								<textarea  class="form-control" id="content" name="Escríbenos" placeholder="Escríbenos"></textarea>
+							</div>
+							<div class="checkbox">
+							  <label><input type="checkbox" required> Acepto los <a href="/terminosycondiciones.html"> Términos y Condiciones</a></label>
+							</div>
+							<button type="submit" class="btn btn-strong"><i class="fab fa-apple"></i>&nbsp;&nbsp; Enviar </button>
+						</form> 
+						  
+				  </div>
+				
+				</div>
 			  </div>
-			  <div class="modal-body">
-					<form action="./mail.php"  method="post" role="form">
-						<div class="form-group">
-							<input type="text" class="form-control" name="bussiness" placeholder="Nombre de la empresa">							
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" name="name" placeholder="Nombre del representante">							
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" name="lastName" placeholder="Apellnameo">							
-						</div>
-						<div class="form-group">
-							<input type="email" class="form-control" name="email" placeholder="Correo">
-						</div>
-						<div class="form-group">
-							<input type="input" class="form-control" name="phone" placeholder="Celular">
-						</div>
-						<div class="form-group">
-							<input type="input" class="form-control" name="website" placeholder="Sitio Web">
-						</div>
-						<div class="form-group">
-							<input type="input" class="form-control" name="city" placeholder="Ciudad">
-						</div>
-						<div class="checkbox">
-						  <label><input type="checkbox" checked> Acepto los <a href="./terminosycondiciones.html"> Términos y Condiciones</a></label>
-						</div>
-						<button type="submit" class="btn btn-strong"><i class="fab fa-apple"></i>&nbsp;&nbsp; Quiero que me contacten </button>
-					</form> 
-					  
-			  </div>
-			
-			</div>
-		  </div>
 
 </div>
 

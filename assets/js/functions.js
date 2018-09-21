@@ -69,7 +69,7 @@ function handleModal(){
 		
 	}
 
-	function videoModal(){
+function videoModal(){
 
 	
 		if ($( "#videoModal" ).hasClass( "opened" )) {
@@ -80,5 +80,17 @@ function handleModal(){
 		
 			
 		}
+
+function contact(){
+
 	
+			if ($( "#contact" ).hasClass( "opened" )) {
+				$( "#contact" ).removeClass( "opened" )
+			} else {
+				$( "#contact" ).addClass( "opened" )
+			}
+			
+				
+			}
+		
 

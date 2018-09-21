@@ -10,11 +10,20 @@
   <meta name="author" content="Israel Domínguez">
   <link rel="stylesheet" href="assets/css/main.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body class="mobile-shift" id="main">
 	
 <header>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124650615-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124650615-1');
+</script>
 
 	<div class="fixed-navbar">
 
@@ -33,7 +42,10 @@
 				<!--<li><a href="#">Preguntas Frecuentes</a></li>-->
 				<li><a href="venue.html">Comercios</a></li>
 				<!--<li><a href="#">Blog</a></li>-->
-				<li><a href="#">Contacto</a></li>
+				<li><a href="#" onclick="contact(); return false;">Contacto</a></li>
+				
+				
+				
 
 			</ul>
 
@@ -52,7 +64,7 @@
 						<div class="kicker">Community Booking System<span></span></div>
 					</h1>
 					<br>
-					<a href="#" onclick="handleModal(); return false;"><div class="btn btn-strong"><i class="fab fa-apple"></i>&nbsp;&nbsp; APP STORE</div></a> 
+					<a href="https://itunes.apple.com/us/app/miconcierge/id1379052365?l=es&ls=1&mt=8" ><div class="btn btn-strong"><i class="fab fa-apple"></i>&nbsp;&nbsp; APP STORE</div></a> 
 					<a href="https://play.google.com/store/apps/details?id=com.mic_mobile"><div class="btn btn-strong"><img src="assets/img/playicon.png" alt="icono de apple">&nbsp;&nbsp; GOOGLE PLAY</div></a>
 				</div>
 				<div class="col-md-8 text-center video-promo">
@@ -101,7 +113,7 @@
 		<div class="row">
 			<div class="col-md text-center">
 				<h5>SI ERES CONCIERGE, MAYORDOMO, RECEPCIONISTA, GERENTE, TOUR OPERADOR, OPC, RP, AGENTE INMOBILIARIO O RECIBES TURISTAS DE MANERA REGULAR ESTA ES TU HERRAMIENTA PARA CONOCER LA OFERTA DE LOS COMERCIOS TURÍSTICOS Y GANAR POR TUS RECOMENDACIONES, ¡INSTALALA YA!</h5>
-				<a href="#" onclick="handleModal(); return false;"><div class="btn btn-strong"><img src="assets/img/appleicon.png" alt="icono de apple">&nbsp;&nbsp; APP STORE</div></a> 
+				<a href="https://itunes.apple.com/us/app/miconcierge/id1379052365?l=es&ls=1&mt=8"><div class="btn btn-strong"><img src="assets/img/appleicon.png" alt="icono de apple">&nbsp;&nbsp; APP STORE</div></a> 
 				<a href="https://play.google.com/store/apps/details?id=com.mic_mobile"><div class="btn btn-strong"><img src="assets/img/playicon.png" alt="icono de apple">&nbsp;&nbsp; GOOGLE PLAY</div></a>
 			</div>
 		</div>
@@ -339,7 +351,7 @@
 		<div class="row">
 			<div class="col-md text-center">
 				<h3>Comienza a ganar dinero recomendando lugares con MiConcierge</h3>
-				<a href="#" onclick="handleModal(); return false;"><div class="btn btn-strong"><img src="assets/img/appleicon.png" alt="icono de apple">&nbsp;&nbsp; APP STORE</div></a> 
+				<a href="https://itunes.apple.com/us/app/miconcierge/id1379052365?l=es&ls=1&mt=8"><div class="btn btn-strong"><img src="assets/img/appleicon.png" alt="icono de apple">&nbsp;&nbsp; APP STORE</div></a> 
 				<a href="https://play.google.com/store/apps/details?id=com.mic_mobile"><div class="btn btn-strong"><img src="assets/img/playicon.png" alt="icono de apple">&nbsp;&nbsp; GOOGLE PLAY</div></a>
 			</div>
 		</div>
@@ -349,18 +361,6 @@
 
 
 <footer>
-<!-- para los comentarios
-	<div class="closer">
-
-		<div class="closing-claim">
-
-			
-
-		</div>
-
-	</div>
--->
-
 	<div class="bg-angled-left"></div>
 
 	<div class="bg-angled-right"></div>
@@ -377,7 +377,7 @@
 
 				<p>Somos un sistema que gestiona a la comunidad de promotores turísticos y brindamos las herramientas
 					necesarias para influenciar de manera positiva a los turistas de un destino determinado a través de la
-					información.</p>
+					información. <a href="about.html">Leer más</a> </p>
 
 			</div>
 
@@ -397,9 +397,8 @@
 
 				<div class="social-icons">
 
-					<a href=""><i class="icon-facebook fab fa-facebook-f"></i></a>
-					<a href=""><i class="icon-twitter fab fa-twitter"></i></a>
-					<a href=""><i class="icon-youtube-play fab fa-youtube"></i></a>
+					<a href="https://www.facebook.com/MiConciergeNet/"><i class="icon-facebook fab fa-facebook-f"></i></a>				
+					<a href="https://www.youtube.com/channel/UCDEzKvKwQqQoMIb7n--PVUQ"><i class="icon-youtube-play fab fa-youtube"></i></a>
 					<!-- <a href=""><i class="icon-linkedin"></i></a> -->
 
 					
@@ -435,28 +434,31 @@
 
 </footer>
 
-<div id="appStoreModal" class="fadeIn modal" onclick="handleModal();" >	
+<div id="contact" class="fadeIn modal" onclick="contact();" >	
 		
-		<div class="modal-dialog" role="document" onclick="handleModal();">
+		<div class="modal-dialog" role="document" onclick="contact();">
 				<div class="modal-content">
 				  <div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Pronto estará disponible la versión para iOS <br> Regístrate y se de los primeros en poder usarla</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="handleModal();">
+					<h5 class="modal-title" id="exampleModalLabel">Queremos escucharte. Escríbenos y pronto nos pondremos en contacto contigo</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="contact();">
 					  <span aria-hidden="true">&times;</span>
 					</button>
 				  </div>
 				  <div class="modal-body">
-						<form action="./mail.php" method="post">
+						<form action="./mailContact.php" method="post">
 							<div class="form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Nombre completo">							
+								<input type="text" required class="form-control" id="name" name="name" placeholder="Nombre completo">							
 							</div>
 							<div class="form-group">
-								<input type="email" class="form-control" id="email" name="email" placeholder="Correo">
+								<input type="email" required class="form-control" id="email" name="email" placeholder="Correo">
+							</div>
+							<div class="form-group">
+								<textarea  class="form-control" id="content" name="Escríbenos" placeholder="Escríbenos"></textarea>
 							</div>
 							<div class="checkbox">
-							  <label><input type="checkbox" checked> Acepto los <a href="./terminosycondiciones.html"> Términos y Condiciones</a></label>
+							  <label><input type="checkbox" required> Acepto los <a href="/terminosycondiciones.html"> Términos y Condiciones</a></label>
 							</div>
-							<button type="submit" class="btn btn-strong"><i class="fab fa-apple"></i>&nbsp;&nbsp; Quiero ser de los primeros </button>
+							<button type="submit" class="btn btn-strong"><i class="fab fa-apple"></i>&nbsp;&nbsp; Enviar </button>
 						</form> 
 						  
 				  </div>

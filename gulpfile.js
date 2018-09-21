@@ -7,7 +7,9 @@ var gulp = require('gulp'),
 		cache = require('gulp-cache'),
 		plumber = require('gulp-plumber'),
 		rename = require('gulp-rename'),
-		del = require('del'),
+		del = require('del'),		
+		imagemin = require('gulp-imagemin'), //Compresor de imágenes
+		imageminPngcrush = require('imagemin-pngcrush'), //Optimiza las imágenes .PNG
 		browserSync = require('browser-sync').create();
 		
 gulp.task('html', function() {
@@ -54,12 +56,23 @@ gulp.task('scripts', function() {
 
 gulp.task('images', function() {
 	return gulp
-		.src('assets/img/*')
+		.src('assets/img/venue/*')
 		.pipe(cache(imageMin({ optimizationLevel: 5, progressive: true, interlaced: true })))
-		.pipe(gulp.dest('dist/assets/img'))
+		.pipe(gulp.dest('dist/assets/img/venue'))
 		.pipe(browserSync.reload({stream: true}));
 });
-
+ /*
+gulp.task('images', function(){
+	return gulp
+		.src('img/about/*.{png,jpg,jpeg,gif,svg}') //Ruta donde buscara las imágenes con extensiones .{png,jpg,jpeg,gif,svg} a comprimir
+	    .pipe(
+	    	imagemin({
+		      plugins:[imageminPngcrush()] //Optimiza la conversión de imágenes PNG
+		    }))
+	    .pipe(gulp.dest('dist/assets/img/about')) //Ruta donde se guardaran la imágenes comprimidas
+	    
+	
+})*/
 gulp.task('icons', function() {
 	return gulp
 		.src('assets/css/1-tools/fonts/*')
