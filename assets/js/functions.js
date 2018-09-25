@@ -92,5 +92,18 @@ function contact(){
 			
 				
 			}
+
+function apply(){
+
+	
+			if ($( "#apply" ).hasClass( "opened" )) {
+				$( "#apply" ).removeClass( "opened" )
+			} else {
+				$( "#apply" ).addClass( "opened" )
+			}
+			
+				
+			}
+		
 		
 

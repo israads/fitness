@@ -32,25 +32,53 @@
 
 			<div class="logo">
 
-				<a href=""><img src="assets/img/MiConcierge.png" alt="MiConcierge"> MiConcierge</a>
+				<a href="./"><img src="assets/img/MiConcierge.png" alt="MiConcierge"> MiConcierge</a>
 
 			</div>
 
 			<ul class="nav">
 
-				<li><a href="#venue">Inicio</a></li>
+				<li><a href="./">Inicio</a></li>
+				<li><a href="./about.html">Nosotros</a></li>
 				<li><a href="#featured">Beneficios</a></li>				
 				<!--<li><a href="#">Preguntas Frecuentes</a></li>-->
 				<li><a href="#price">Precios</a></li>
-				<li><a href="./index.html">Promotores</a></li>
+				<li><a href="./">Promotores</a></li>
 				<!--<li><a href="#">Blog</a></li>-->
-				<li><a href="#" onclick="contact(); return false;">Contacto</a></li>
+				<li><a href="./contact.html" >Contacto</a></li>
 
 			</ul>
-
 		</div>
+	</div>
+
+	<div class="slide-out-nav">
+
+		<ul class="mobile-nav">
+			<li><a href="./">Inicio</a></li>
+			<li><a href="./about.html">Nosotros</a></li>
+			<li><a href="#featured">Beneficios</a></li>				
+			<!--<li><a href="#">Preguntas Frecuentes</a></li>-->
+			<li><a href="#price">Precios</a></li>
+			<li><a href="./">Promotores</a></li>
+			<!--<li><a href="#">Blog</a></li>-->
+			<li><a href="./contact.html" >Contacto</a></li>
+		</ul>
+		<div class="mobile-nav-slice"></div>
 
 	</div>
+
+	
+
+
+
+	<div class="mobile-nav-toggle">
+
+		<span></span>
+		<span></span>
+		<span></span>
+
+	</div
+
 
 	<div class="claim-lockup">
 	
@@ -63,7 +91,7 @@
 						<div class="kicker">HOSPITALITY BOOKING SYSTEM</div>
 					</h1>
 					<br>
-					<a href="#" onclick="handleModal(); return false;"><div class="btn btn-strong">Quiero más información</div></a> 
+					<a href="#price"><div class="btn btn-strong">Quiero más información</div></a> 
 					<a href="#" onclick="videoModal(); return false;"><div class="btn btn-light">Ver vídeo</div></a> 
 					
 				</div>
@@ -71,33 +99,6 @@
 			</div>
 		
 		</div>
-
-	</div>	
-
-	<div class="slide-out-nav">
-
-		<ul class="mobile-nav">
-
-			<li><a href="#venue">Inicio</a></li>
-			<li><a href="#featured">Beneficios</a></li>				
-			<!--<li><a href="#">Preguntas Frecuentes</a></li>-->
-			<li><a href="#price">Precios</a></li>
-			<li><a href="./index.html">Promotores</a></li>
-			<!--<li><a href="#">Blog</a></li>-->
-			<li><a href="#">Contacto</a></li>
-
-
-		</ul>
-
-		<div class="mobile-nav-slice"></div>
-
-	</div>
-
-	<div class="mobile-nav-toggle">
-
-		<span></span>
-		<span></span>
-		<span></span>
 
 	</div>
 
@@ -108,7 +109,6 @@
 	<div class="container">
 
 		<div class="row text-center">
-
 			
 			<div class="col-lg-4 feature">
 				<i class="far fa-money-bill-alt fa-3x"></i>
@@ -149,7 +149,7 @@
 
 </section>
 
-<section id="features">
+<section id="featured2">
 	<div class="container-fluid">
 		<div class="row bg-a d-flex align-items-center">
 			<div class="col-md-10">
@@ -244,7 +244,7 @@
 						<hr>					
 					</div>
 					<div class="button-price">
-						<a class="btn btn-info" onclick="handleModal(); return false;" href="#">Quiero vender más</a>
+						<a class="btn btn-info" onclick="contact(); return false;" href="#">Quiero vender más</a>
 					</div>
 				</div>
 			</div>
@@ -269,7 +269,7 @@
 						<hr>					
 					</div>
 					<div class="button-price">
-						<a class="btn btn-info" onclick="handleModal(); return false;" href="#">Quiero vender más</a>
+						<a class="btn btn-info" onclick="contact(); return false;" href="#">Quiero vender más</a>
 					</div>
 				</div>
 			</div>
@@ -310,7 +310,7 @@
 								<hr>					
 							</div>
 							<div class="button-price">
-								<a class="btn btn-info" onclick="handleModal(); return false;" href="#">Quiero vender más</a>
+								<a class="btn btn-info"  onclick="contact(); return false;" href="#">Quiero vender más</a>
 							</div>
 						</div>
 					</div>
@@ -376,7 +376,7 @@
 				</div>
 	
 			</div>
-	
+		<!--
 			<div class="row">
 	
 				<div class="col-lg-13 col-lg-offset-7">
@@ -394,6 +394,7 @@
 				</div>
 	
 			</div>
+			-->
 	
 		</div>
 	
@@ -416,15 +417,28 @@
 								<input type="text" required class="form-control" id="name" name="name" placeholder="Nombre completo">							
 							</div>
 							<div class="form-group">
+								<input type="text" required class="form-control" id="company" name="company" placeholder="Empresa">							
+							</div>
+							<div class="form-group">
+								<input type="text" required class="form-control" id="phone" name="phone" placeholder="Teléfono">							
+							</div>
+							<div class="form-group">
 								<input type="email" required class="form-control" id="email" name="email" placeholder="Correo">
 							</div>
 							<div class="form-group">
 								<textarea  class="form-control" id="content" name="Escríbenos" placeholder="Escríbenos"></textarea>
 							</div>
 							<div class="checkbox">
-							  <label><input type="checkbox" required> Acepto los <a href="/terminosycondiciones.html"> Términos y Condiciones</a></label>
+							  <<label><input type="checkbox" required> E leido el <a href="./avisodeprivacidad.html"> aviso de privacidad</a></label>
 							</div>
-							<button type="submit" class="btn btn-strong"><i class="fab fa-apple"></i>&nbsp;&nbsp; Enviar </button>
+							
+							<div id="so"></div>
+							<script>
+									var txt = '<input type="hidden" name="'+navigator.platform+'" value="si">';																
+									console.log(txt);
+									document.getElementById("so").innerHTML = txt;
+								</script>
+							<button type="submit" class="btn btn-strong"> Enviar </button>
 						</form> 
 						  
 				  </div>
@@ -443,8 +457,8 @@
 			  <div class="modal-body">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="videoModal(); ">
 							<span aria-hidden="true">&times;</span>
-						  </button>		
-						  <iframe width="600" height="450" src="https://www.youtube.com/embed/IpJa6nTWNa4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						  </button>								  
+						  <iframe width="600" height="450" src="https://www.youtube.com/embed/PLc9M0yVVEk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			  </div>
 			
 			</div>

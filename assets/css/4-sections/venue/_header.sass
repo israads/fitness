@@ -4,22 +4,30 @@
 
         .btn-light            
             background-color: #e0e0e0
-	
+        .claim
+            padding-top: 40vh
+            @media (max-width: 350px)     
+                padding-top: 20vh
+        
     .btn-light
         background-color: white
         width: auto
     
-    #features
+    #featured2
         background-color: white
         color: #656e74
 
         .col-md-10
-            align-items: center !important
+            align-items: center !important       
+            @media (min-width: 350px)     
+                padding:                
+                    right: 100px
+                    left: 100px
+                    top: 50px
+                    bottom: 50px
             padding:
-                right: 100px
-                left: 100px
-                top: 50px
-                bottom: 50px
+                top: 20px
+                bottom: 20px
 
         h2
             color: $brand-secondary
@@ -28,3 +36,8 @@
 
         .bg-b
             background-color: #f0f0f0
+        
+        @media (max-width: 350px)
+            h2
+                font-size: 1.6rem;
+            
