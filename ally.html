@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
-<body class="mobile-shift" id="about">
+<body class="mobile-shift" id="ally">
 
 <header >
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -37,7 +37,9 @@
 
 			<ul class="nav">
 				<li><a href="http://www.micnegocios.com/">Comercio</a></li>
-				<li><a href="./">Promotores</a></li>								
+				<li><a href="./">Promotores</a></li>				
+				<li><a href="https://blog.miconcierge.mx">Blog</a></li>
+				<li><a href="#" onclick="contact(); return false;">Contacto</a></li>
 			</ul>
 		</div>
 	</div>
@@ -47,7 +49,8 @@
 
 		<ul class="mobile-nav">
 			<li><a href="http://www.micnegocios.com/">Comercio</a></li>
-			<li><a href="./">Promotores</a></li>				
+			<li><a href="./">Promotores</a></li>		
+			<li><a href="https://blog.miconcierge.mx">Blog</a></li>		
 			<li><a href="#" onclick="contact(); return false;">Contacto</a></li>
 		</ul>
 
@@ -62,106 +65,182 @@
 		<span></span>
 
 	</div>
+
+
 </div>
-    
-   <div class="container-fluid p-5">
-	   <div class="row">
-			<div class="col-md-8 text-center">
-					<h2>Contáctanos <br> <small>para cualquier duda o recomendación</small></h2>
-					<form action="./mailContact.php" method="post">
-						<div class="form-group">
-							<input type="text" required class="form-control" id="name" name="name" placeholder="Nombre completo">							
-						</div>
-						<div class="form-group">
-							<input type="email" required class="form-control" id="email" name="email" placeholder="Correo">
-						</div>
-						<div class="form-group">
-							<textarea  class="form-control" id="content" name="Escríbenos" placeholder="Escríbenos"></textarea>
-						</div>
-						<div class="checkbox">
-						  <label><input type="checkbox" required> Acepto los <a href="/terminosycondiciones.html"> Términos y Condiciones</a></label>
-						</div>
-						<button type="submit" class="btn btn-strong"> Enviar </button>
-					</form> 
-			</div>
-
-			<div class="col-md-6 text-center contacs">
+<section class="ally">
+		<div class="container">
+			<div class="row">
+				<div class="col-md">
+						<h1 class="text-center">NUESTROS ALIADOS</h1>
+				</div>
 				
-					<p> <strong>PROMOTORES</strong><br>
-						Sarai Diez de Bonilla<br>
-						<a href="tel:+5216623646237">+52 1 662 364 6237</a><br>
-						<a href="mailto:sas@miconcierge.net">sas@miconcierge.net</a>
-					</p><br>
-
-					<p> <strong>DIRECCIÓN Y VENTAS</strong><br>
-						Daniel Alcocer<br>
-						<a href="tel:+5219841069387">+52 1 984 106 9387</a><br>
-						<a href="mailto:dalco@miconcierge.net">dalco@miconcierge.net</a>
-					</p>
 			</div>
-			<div class="col-md-6 text-center contacs">
-					<p><strong>SOPORTE</strong><br>
-						Israel Domínguez<br>
-						<a href="tel:+529991400560">+52 1 999 140 0560</a><br>
-						<a href="mailto:israel@miconcierge.net">israel@miconcierge.net</a>
-					</p><br>					
 
-					<p><strong>GENERAL</strong><br>
-						<a href="mailto:contacto@miconcierge.net">contacto@miconcierge.net</a>
-					</p>
+			<div class="row subtitle">
+				<h2>Comerciales</h2>
 			</div>
-		</div>
-   </div>
-
-   
-    
-   
-
-	 <div class="container p-5 office">
-			<div class="row">
-				<div class="col-md-20">
-					<h2>Nuestras Oficinas</h2> <br>             
+			<div class="row">				
+				<div class="col-md-5 ">
+					<a href="#">
+						<img src="/assets/img/ally/ALLTOURNATIVE2017.png" alt="" class="mx-auto d-block img-responsive">
+					</a>
 				</div>
-				<div class="col-md-5 text-center">
-					<img src="assets/img/about/playa-del-carmen-.jpg" alt="">
-					<br><br>
-					<h4>Playa del Carmen <br> <small>Dirección general y comercial</small></h4>				
+				<div class="col-md-5 ">
+						<a href="#">
+							<img src="/assets/img/ally/aloha.png" alt="" class="mx-auto d-block img-responsive">
+						</a>
 				</div>
-				<div class="col-md-5 text-center">
-					<img src="assets/img/about/merida.jpg" alt="">
-					<br><br>
-					<h4>Mérida <br> <small>Investigación y desarrollo</small></h4>
+				<div class="col-md-5 ">
+						<a href="#">
+							<img src="/assets/img/ally/xcaret.png" alt="" class="mx-auto d-block img-responsive">
+						</a>
 				</div>
-				<div class="col-md-5 text-center">
-					<img src="assets/img/about/cdmx.jpg" alt="">
-					<br><br>
-					<h4>Ciudad de México <br> <small> Startup Office - 500</small></h4>				
+				<div class="col-md-5 ">
+					<a href="#">
+						<img src="/assets/img/ally/cancunAdventure.jpg" alt="" class="mx-auto d-block img-responsive">
+					</a>
+				</div>				
+				<div class="col-md-5 ">
+						<a href="#">
+							<img src="/assets/img/ally/hardRock.jpg" alt="" class="mx-auto d-block img-responsive">
+						</a>
 				</div>
-				<div class="col-md-5 text-center">
-					<img src="assets/img/about/monterrey.jpg" alt="">
-					<br><br>
-					<h4>Monterrey <br> <small> Administración</small></h4>
-				</div>			
-			</div>
+				<div class="col-md-5 ">
+						<a href="#">
+							<img src="/assets/img/ally/cantina.png" alt="" class="mx-auto d-block img-responsive">
+						</a>
+				</div>
+				<div class="col-md-5 ">
+						<a href="#">
+							<img src="/assets/img/ally/woodward.png" alt="" class="mx-auto d-block img-responsive">
+						</a>
+				</div>
+				
+				<div class="col-md-5 ">
+						<a href="#">
+							<img src="/assets/img/ally/markey.jpeg" alt="" class="mx-auto d-block img-responsive">
+						</a>
+				</div>
+				<div class="col-md-5 ">
+						<a href="#">
+							<img src="/assets/img/ally/alux.jpg" alt="" class="mx-auto d-block img-responsive">
+						</a>
+				</div>
+				
+				<div class="col-md-5 ">
+						<a href="#">
+							<img src="/assets/img/ally/harrys.jpg" alt="" class="mx-auto d-block img-responsive">
+						</a>
+				</div>
 			
-			<div class="row">
-				<div class="col-md-10 text-center mt-5">
-					<h5>Av. 15 esquina Av. Aviación <br>
-							Plaza Paraiso Torre Y Piso 3C <br>
-							Playa del Carmen, 77710 MX <br>
-							Cel: +52 1 998 230 2696 <br>
-							Tel: +52 984 121 00 11
-					</h5>
+				<div class="col-md-5 ">
+						<a href="#">
+							<img src="/assets/img/ally/50Friends.png" alt="" class="mx-auto d-block img-responsive">
+						</a>
 				</div>
-	
-				<div class="col-md-10 text-center mt-5">
-						<h5>Paseo de la Reforma 296 <br> Juárez  Piso 36 <br>
-							 Ciudad de México, 06600 MX <br>
-							Cel: +52 1 984 106 9387
-						</h5>
-					</div>
+				<div class="col-md-5 ">
+						<a href="#">
+							<img src="/assets/img/ally/cocobongo.png" alt="" class="mx-auto d-block img-responsive">
+						</a>
+				</div>
+				<div class="col-md-5 ">
+						<a href="#">
+							<img src="/assets/img/ally/cirque-du.soleil.png" alt="" class="mx-auto d-block img-responsive">
+						</a>
+				</div>
+				<div class="col-md-5 ">
+						<a href="#">
+							<img src="/assets/img/ally/hertz.jpg" alt="" class="mx-auto d-block img-responsive">
+						</a>
+				</div>				
+
+						
 			</div>
-		 </div>
+			<!--Fin de seccion-->
+
+			<div class="row subtitle">
+				<h2>Organizaciones y Gobierno</h2>
+			</div>
+			<div class="row">				
+				<div class="col-md-5 ">
+					<a href="#">
+						<img src="/assets/img/ally/500.png" alt="" class="mx-auto d-block img-responsive">
+					</a>
+				</div>
+				<div class="col-md-5 ">
+						<a href="#">
+							<img src="/assets/img/ally/inadem.png" alt="" class="mx-auto d-block img-responsive">
+						</a>
+				</div>
+						
+			</div>
+			<!--Fin de seccion-->
+
+			<div class="row subtitle">
+					<h2>Tecnología</h2>
+				</div>
+				<div class="row">				
+					<div class="col-md-5 ">
+						<a href="#">
+							<img src="/assets/img/ally/aws.png" alt="" class="mx-auto d-block img-responsive">
+						</a>
+					</div>
+					<div class="col-md-5 ">
+							<a href="#">
+								<img src="/assets/img/ally/github.png" alt="" class="mx-auto d-block img-responsive">
+							</a>
+					</div>
+					<div class="col-md-5 ">
+							<a href="#">
+								<img src="/assets/img/ally/monday.png" alt="" class="mx-auto d-block img-responsive">
+							</a>
+					</div>		
+					<div class="col-md-5 ">
+							<a href="#">
+								<img src="/assets/img/ally/pipedrive.png" alt="" class="mx-auto d-block img-responsive">
+							</a>
+					</div>
+					<div class="col-md-5 ">
+							<a href="#">
+								<img src="/assets/img/ally/google.png" alt="" class="mx-auto d-block img-responsive">
+							</a>
+					</div>
+					<div class="col-md-5 ">
+							<a href="#">
+								<img src="/assets/img/ally/facebook.jpg" alt="" class="mx-auto d-block img-responsive">
+							</a>
+					</div>
+					<div class="col-md-5 ">
+							<a href="#">
+								<img src="/assets/img/ally/linkedin.png" alt="" class="mx-auto d-block img-responsive">
+							</a>
+					</div>
+					<div class="col-md-5 ">
+							<a href="#">
+								<img src="/assets/img/ally/bonnus.jpg" alt="" class="mx-auto d-block img-responsive">
+							</a>
+					</div>
+					<div class="col-md-5 ">
+							<a href="#">
+								<img src="/assets/img/ally/dartspeed.png" alt="" class="mx-auto d-block img-responsive">
+							</a>
+					</div>
+					<div class="col-md-5 ">
+							<a href="#">
+								<img src="/assets/img/ally/ibm.png" alt="" class="mx-auto d-block img-responsive">
+							</a>
+					</div>
+					
+
+
+				</div>
+				<!--Fin de seccion-->
+
+		
+		</div>
+	
+	</section>
 	 
 
 		 <footer>
@@ -266,9 +345,9 @@
 										<textarea  class="form-control" id="content" name="Escríbenos" placeholder="Escríbenos"></textarea>
 									</div>
 									<div class="checkbox">
-									  <label><input type="checkbox" required> E leido el <a href="./avisodeprivacidad.html"> aviso de privacidad</a></label>
+									  <label><input type="checkbox" required> Acepto los <a href="/terminosycondiciones.html"> Términos y Condiciones</a></label>
 									</div>
-									<button type="submit" class="btn btn-strong"> Enviar </button>
+									<button type="submit" class="btn btn-strong"><i class="fab fa-apple"></i>&nbsp;&nbsp; Enviar </button>
 								</form> 
 								  
 						  </div>
